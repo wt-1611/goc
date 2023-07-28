@@ -48,7 +48,7 @@ func parReady(dir string)  error {
 func sendMessage (title,par,unum,hostname,sinfo string) {
 	//https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxx
 	//http://<proxy_ip>/cgi-bin/webhook/send?key=xxx
-	hook := "http://<proxy_ip>/cgi-bin/webhook/send?key=89630204-f3ef-458b-a23b-9213842b98aa"
+	hook := "http://<proxy_ip>/cgi-bin/webhook/send?key=xxx"
 	var m Message
 	m.MsgType = "markdown"
 	m.Markdown.Title= title +"\n>分区:" + par + "\n> 当前使用率(%):" + unum + "\n主机名:" + hostname + "\n分区信息:" + sinfo
